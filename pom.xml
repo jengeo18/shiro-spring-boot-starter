@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.6.RELEASE</version>
+		<relativePath/>
+	</parent>
+
+	<groupId>top.jengeo</groupId>
+	<artifactId>shiro-spring-boot</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>shiro-spring-boot-autoconfigure</module>
+		<module>shiro-spring-boot-starter</module>
+	</modules>
+
+	<name>shiro-spring-boot</name>
+	<description>Shiro Spring Boot Starter</description>
+	<url>https://github.com/jengeo18/shiro-spring-boot-stater</url>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<tag>master</tag>
+		<url>https://github.com/jengeo18/shiro-spring-boot-starter</url>
+		<connection>scm:git:git://github.com/jengeo18/shiro-spring-boot-starter.git</connection>
+		<developerConnection>scm:git:ssh://github.com/jengeo18/shiro-spring-boot-starter.git</developerConnection>
+	</scm>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<shiro.version>1.2.2</shiro.version>
+		<spring-boot.version>1.5.6.RELEASE</spring-boot.version>
+		<shiro-freemarker-tags.version>0.1</shiro-freemarker-tags.version>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>jengeo</name>
+			<email>jengeo18@gmail.com</email>
+		</developer>
+	</developers>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-core</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-web</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-spring</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.mingsoft</groupId>
+				<artifactId>shiro-freemarker-tags</artifactId>
+				<version>${shiro-freemarker-tags.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
