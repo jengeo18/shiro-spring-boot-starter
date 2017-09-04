@@ -1,15 +1,15 @@
-#Shiro Spring Boot Starter
+# Shiro Spring Boot Starter
 
 Shiro Spring Boot Starter将帮助你在Spring Boot环境中使用Shiro
 
 ### 依赖
-
+```
 <dependency>
     <groupId>com.github.jengeo18</groupId>
     <artifactId>shiro-spring-boot-starter</artifactId>
     <version>0.0.1</version>
 </dependency>
-
+```
 ### 配置
 
 在application.properties指定配置文件路径：
